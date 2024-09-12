@@ -26,3 +26,19 @@ adviceHeading.insertAdjacentHTML(
   "afterend",
   "<p>Always strive to learn more than you already know. Reading documentation of something you don't understand is a great way to start!</p>"
 );
+
+// home page colors
+
+const startButton = document.querySelector("#start-now");
+const heroHomepage = document.querySelector(".hero--homepage");
+const cards = document.querySelectorAll(".card");
+
+// changes btn color
+startButton.style.background = "#2015ff";
+// changes btn radius
+startButton.style.borderRadius = "5rem";
+
+heroHomepage.classList.add("new-hero");
+
+cards.forEach((card) => card.classList.add("new-card"));
+console.log(cards);
