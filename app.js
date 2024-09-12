@@ -41,4 +41,3 @@ startButton.style.borderRadius = "5rem";
 heroHomepage.classList.add("new-hero");
 
 cards.forEach((card) => card.classList.add("new-card"));
-console.log(cards);
