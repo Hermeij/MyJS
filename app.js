@@ -6,3 +6,13 @@ mainHeading.addEventListener("mouseover", function () {
 mainHeading.addEventListener("mouseleave", function () {
   mainHeading.textContent = "Learn ARKit";
 });
+
+// exercise event listener
+const heroModule = document.querySelector(".hero__module");
+
+function removeModuleChild() {
+  heroModule.lastElementChild.remove();
+  document.removeEventListener("click", removeModuleChild);
+}
+
+document.addEventListener("click", removeModuleChild);
